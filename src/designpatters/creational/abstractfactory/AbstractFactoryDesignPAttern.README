@@ -1,0 +1,17 @@
+✅ Abstract Factory Design Pattern in Java
+The Abstract Factory Pattern is a creational design pattern used to create families of related or dependent
+objects without specifying their concrete classes. It provides an interface for creating related objects
+but allows the actual object instantiation to be delegated to subclasses (or concrete factories).
+
+✅ When to Use Abstract Factory Pattern
+When you need to create families of related objects.
+When you want to decouple the client from the object creation process.
+When the application should be independent of how its objects are created.
+When the set of possible objects to create is fixed or stable.
+
+✅ Abstract Factory Design Pattern Structure
+Abstract Factory: Declares a set of abstract methods for creating related products.
+Concrete Factory: Implements the abstract factory methods to create concrete products.
+Abstract Product: Defines an interface that all concrete products implement.
+Concrete Product: Implements the abstract product interface.
+Client: Uses only the abstract factory and abstract product interfaces, without being aware of the concrete classes.

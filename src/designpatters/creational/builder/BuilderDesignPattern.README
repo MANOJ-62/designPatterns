@@ -1,0 +1,16 @@
+✅ Builder Design Pattern in Java
+The Builder Pattern is a creational design pattern used to construct complex objects step by step.
+It allows the creation of objects with many optional parameters without requiring multiple constructors (avoiding the telescoping constructor problem).
+
+🚀 Why Use the Builder Pattern?
+Solves the Telescoping Constructor Problem: When a class has many optional parameters, constructors can become hard to manage.
+Improves Readability & Maintainability: The object creation process is more readable with method chaining.
+Immutable Object Creation: Useful for constructing immutable objects like in the Effective Java Builder pattern.
+Flexibility: Can be modified to include more attributes without breaking existing code.
+Encapsulation of Object Construction: The builder hides the complexity of creating an object.
+
+✅ When to Use the Builder Pattern
+When an object has many optional parameters.
+When you want to make object creation more readable.
+When you need immutable objects (e.g., Lombok’s @Builder annotation).
+When constructing an object is a multi-step process.

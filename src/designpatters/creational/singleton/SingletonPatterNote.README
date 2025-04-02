@@ -1,0 +1,33 @@
+The Singleton Patterns is a one of the common and mostly used creational design pattern to create a maintain a
+single instance for the class overall the application.
+
+There are some ways to create and break the singleton the pattern like:
+
+Ways to implement the singleton design pattern.
+
+1. Eager Loading (EagerSingleton.class) :
+   Implementation : create a static instance at startup itself and use it.
+   Drawback: If we are not going to use it, it is waste of memory space.
+   Solution: Use LAzy Initialization.
+
+2. Lazy Initialization (NonSynchronizedSingleton.class) :
+   Implementation : declare a null instance and initialize while required using getInstance Method. include null check.
+   Drawback : its breakable in multithreaded environment.
+   Solution: Use Synchronized block and double null check.
+
+3. SynchronizedSingleton Initialization (SynchronizedSingleton.class) :
+   Implementation : declare a null instance and initialize while required using getInstance Method. using double null check with Synchronized block.
+   Drawback : its breakable while serialization.
+   Solution: Override readResolve method.
+
+4. SerializableSingleton (SerializableSafeSingleton.class) :
+   Implementation : As same as SynchronizedSingleton and also overriding the readResolve method to return the same instance.
+   Drawback: Its breakable using java Reflections.
+   Solution : use Enum Singleton.
+
+5. Enum Singleton (EnumSingleton.class) :
+   its the most recommended way to implement the singleton design patter.Since Enums are thread safe and static in nature.
+   Implementation: create a enum class and declare a instance.
+   Non breakable.
+
+what if someone try to clone it make another instance ? in that case we can override the clone method and throw clone exception.

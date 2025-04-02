@@ -1,0 +1,27 @@
+The Factory Design Pattern is a creational design pattern used to create objects without specifying
+the exact class of object that will be created. It provides a way to encapsulate the object creation
+logic in a separate method or class, making the code more modular, flexible, and easier to maintain.
+
+✅ Factory Design Pattern Structure:
+
+The Factory pattern consists of:
+Product Interface: The common interface implemented by all objects the factory can create.
+Concrete Products: The actual classes that implement the product interface.
+Factory Class: Contains the logic to create and return different types of objects.
+Client: Uses the factory to get the required object without directly using new.
+
+✅ When to Use the Factory Pattern
+When the object creation logic is complex.
+When the client shouldn't be concerned with how objects are created.
+When you need to create multiple types of related objects.
+When you want to make your application easily extensible (adding new product types without changing client code).
+
+✅ Real-world Examples of Factory Pattern
+JDBC API in Java:
+DriverManager.getConnection() uses the factory pattern to return the correct Connection object for the given database URL.
+Loggers:
+LoggerFactory.getLogger() in SLF4J creates different types of logger instances.
+Document Management Systems:
+A document factory creates different types of documents (PDF, DOCX, TXT) based on file type.
+Payment Gateways:
+Payment processors create different objects for CreditCard, PayPal, or NetBanking based on payment type.
